@@ -9,6 +9,7 @@
 
 a {
 	text-decoration: none;
+  color: rgba(31, 32, 65, 0.5);
 }
 
 ul,
@@ -28,7 +29,7 @@ body {
 	line-height: 1;
 	background: #fafafa;
 	font-size: 14px;
-	color: #252b42;
+	color: #1F2041;
 	font-weight: 500;
 	font-family: Montserrat;
 }
@@ -83,7 +84,6 @@ background-color: aqua;
 }
 .header__list {
 	display: flex;
-	
 	flex-wrap: wrap;
 	color: rgba(31, 32, 65, 0.5);
 	align-items: center;
@@ -102,6 +102,8 @@ background-color: aqua;
 .header__list-link {
 	white-space: nowrap;
 	text-align:  center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .arrow::after{
 	content: "\e5cf";
@@ -170,14 +172,18 @@ li:hover .header__submenu{
 	/* position: absolute; */
 	width: 100%;
 	height: 100%;
+  min-height: 250px;
 	/* top: 0;
 	left: 0; */
 }
 .main {
 	flex:1 1 auto;
 	position: relative;
+  height: 844px;
+  
 }
 .main__container {
+  
 }
 .main__form-rectangle {
 	position: absolute;
@@ -200,6 +206,7 @@ li:hover .header__submenu{
 }
 .main__title-form {
 	grid-area: title;
+  
 }
 .main__name-and-field_1 {
 	grid-area: arrival;
@@ -212,6 +219,7 @@ li:hover .header__submenu{
 }
 .name-and-field {
 	cursor: pointer;
+  
 }
 .name-and-field__name {
 	display: inline-block;
@@ -226,6 +234,7 @@ li:hover .header__submenu{
 	box-sizing: border-box;
 	border-radius: 4px;
 	padding-left: 15px;
+  color: rgba(31, 32, 65, 0.75);
 }
 .main__form-rectangle-button {
 	grid-area: pick-up-a-room;
@@ -237,4 +246,79 @@ li:hover .header__submenu{
 
 .footer__container{
 	height: 200px;
+}
+
+/* //footer// */
+.footer {
+  
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+  padding-top: 104px;
+ 
+}
+.footer__container p{
+  color: rgba(31, 32, 65, 0.75);
+ line-height: 24px;
+}
+
+
+.footer__tagline {
+}
+.footer__logo {
+  
+}
+.logo {
+}
+.logo__vector {
+}
+.logo__text {
+}
+.footer__tagline-text {
+}
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__nav {
+  
+}
+.footer__container-item{
+  max-width: 270px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+}
+.footer__nav-item{
+
+  margin-top: 20px;
+}
+.footer__nav-list {
+}
+.footer__nav-item {
+}
+.footer__nav-link {
+}
+.footer__paragraph {
+}
+.footer__inputText {
+}
+.footer_title-link{
+  font-weight: bold;
+  color: #1F2041;
+
+}
+.footer__last-footer {
+  height: 70px;
+  line-height: 70px;
+}
+.footer__last-text {
+  
+}
+.footer__last-footer-nav {
+  float: right;
 }
