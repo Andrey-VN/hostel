@@ -1,0 +1,69 @@
+
+.header{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    text-align: center;
+    &__logo{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    &__nav__list{
+        display: flex;
+        align-items: flex-start;
+        
+        margin-left: 28.6rem;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.707rem;
+        &-item{
+            margin-right: 2rem;
+            position: relative;   
+        }
+        &-link{
+            color: rgba(31, 32, 65, 0.5);
+        }
+    }
+    &-control {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        &__btn{
+            border-radius: 2.2rem;
+            font-weight: 700;
+            font-size: 1.2em;
+            
+            cursor: pointer;
+            line-height: 14,63px;
+            
+            &-entry {
+                padding: 0.6rem 1.7rem;
+                position: relative;
+                background: $white;
+                color: #8BA4F9;
+               
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: -4px;
+                    bottom: -4px;
+                    left: -4px;
+                    right: -4px;
+                    background: $btn-dradient;
+                    border-radius: 2.2rem;
+                    z-index: -1;
+                  }
+            }
+            &-registration{
+                padding: 0.8rem 2rem 0.8rem 2rem;
+                margin-left: 2rem;
+                background: $btn-dradient;
+                color: $white;
+            }
+        }  
+    }
+    &-arrow__bottom{
+        padding-right: 3.1rem;
+        margin-right: -0.55rem;
+    }
+}

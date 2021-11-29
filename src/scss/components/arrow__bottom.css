@@ -1,0 +1,17 @@
+.arrow {
+  position: relative;
+}
+
+.arrow::after {
+  content: "";
+  display: inline-block;
+  text-align: center;
+  width: 2.4rem;
+  height: 2.1rem;
+  background-image: url("images/arrow.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 0.4rem);
+}
+/*# sourceMappingURL=arrow__bottom.css.map */
