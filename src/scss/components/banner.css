@@ -1,0 +1,14 @@
+.banner {
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: -999;
+}
+
+.banner__image {
+  display: block;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=banner.css.map */

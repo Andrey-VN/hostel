@@ -1,12 +1,21 @@
 
 .header{
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    text-align: center;
+    position: relative;
+    z-index: -2;
+    overflow: hidden;
+    background: $white;
+    
+    &__container{
+        position: relative;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        text-align: center;
+        height: 7rem;
+    }
     &__logo{
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        // padding-top: 1.5rem;
+        // padding-bottom: 1.5rem;
     }
     &__nav__list{
         display: flex;
@@ -32,17 +41,15 @@
             border-radius: 2.2rem;
             font-weight: 700;
             font-size: 1.2em;
-            
             cursor: pointer;
             line-height: 14,63px;
-            
             &-entry {
                 padding: 0.6rem 1.7rem;
                 position: relative;
                 background: $white;
                 color: #8BA4F9;
-               
                 &::before {
+                    display: inline-block;
                     content: "";
                     position: absolute;
                     top: -4px;
