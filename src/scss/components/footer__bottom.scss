@@ -1,0 +1,22 @@
+.footer__bottom{
+    &__container{
+        display: flex;
+        padding-top: 2rem;
+        padding-bottom: 2.3rem;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+    }
+    &__copyright{
+        font-size: 1.4rem;
+        color: rgba(31, 32, 65, 0.75);;
+    }
+    &__nav{
+        &-list{
+            display: flex;
+            &__item{
+                margin-right: 20px;
+            }
+        }  
+    } 
+}

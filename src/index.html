@@ -181,6 +181,7 @@ body {
 .footer {
   margin-top: 83rem;
   background: #fff;
+  border-bottom: .1rem solid #E5E5E5;
 }
 
 .footer-item {
@@ -198,11 +199,13 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   padding-top: 10.4rem;
+  margin-bottom: -1.1rem;
 }
 
 .footer__paragraph {
   font-size: 1.4rem;
   color: rgba(31, 32, 65, 0.75);
+  line-height: 2.4rem;
 }
 
 .footer-item:last-child, .footer-item:first-child {
@@ -212,8 +215,11 @@ body {
 .footer-list__item__title {
   font-weight: 700;
   font-size: 1.2rem;
-  color: #1F2041;
   margin-bottom: 2.1rem;
+}
+
+.footer-list__link__title {
+  color: #1F2041;
 }
 
 .footer-list__item {
@@ -227,6 +233,83 @@ body {
 
 .footer__logo__link {
   margin-bottom: 2rem;
+}
+
+.footer__e-mail_subscription {
+  width: 26rem;
+  height: 4.4rem;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: .4rem;
+}
+
+.footer__e-mail_subscription::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+  font-size: 1.4rem;
+  padding-left: 1.5rem;
+}
+
+.footer__e-mail_subscription:-ms-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+  font-size: 1.4rem;
+  padding-left: 1.5rem;
+}
+
+.footer__e-mail_subscription::-ms-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+  font-size: 1.4rem;
+  padding-left: 1.5rem;
+}
+
+.footer__e-mail_subscription::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+  font-size: 1.4rem;
+  padding-left: 1.5rem;
+}
+
+.footer__bottom__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2.3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__bottom__copyright {
+  font-size: 1.4rem;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.footer__bottom__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__bottom__nav-list__item {
+  margin-right: 20px;
+}
+
+.main__container {
+  position: relative;
+}
+
+.main__paragraph {
+  width: 29.7rem;
+  position: absolute;
+  text-align: right;
+  padding-top: 0;
+  top: 75.2rem;
+  right: 0;
+  font-size: 1.4rem;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 2.4rem;
 }
 /*# sourceMappingURL=main.css.map *//*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
 /*# sourceMappingURL=normalize.min.css.map */
@@ -250,7 +333,12 @@ body {
         </div>
       </div>
     </header>
-    <div class="banner"> <img class="banner__image" src="/src/images/banner/banner-1.png" alt=""></div>
+    <div class="banner"> <img class="banner__image" src="/src/images/banner/banner-1.png" alt="Banner"></div>
+    <main class="main"> 
+      <div class="container main__container">
+        <p class="main__paragraph">Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
+      </div>
+    </main>
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer-item"><a class="footer__logo__link" href=""><img class="footer__logo logo" src="/src/images/logo.png" alt="Logo"></a>
@@ -258,23 +346,25 @@ body {
         </div>
         <div class="footer-item">
           <ul class="footer-list"> 
-            <li class="footer-list__item__title">НАВИГАЦИЯ</li>
+            <li class="footer-list__item__title"> <a class="footer-list__link__title" href="#">НАВИГАЦИЯ</a></li>
             <li class="footer-list__item"> <a class="footer-list__link" href="#">О нас</a></li>
+            <li class="footer-list__item"> <a class="footer-list__link" href="#">Новости</a></li>
             <li class="footer-list__item"> <a class="footer-list__link" href="#">Служба поддержки</a></li>
             <li class="footer-list__item"> <a class="footer-list__link" href="#">Услуги</a></li>
           </ul>
         </div>
         <div class="footer-item">
           <ul class="footer-list"> 
-            <li class="footer-list__item__title">О НАС</li>
+            <li class="footer-list__item__title"> <a class="footer-list__link__title" href="#">О НАС</a></li>
             <li class="footer-list__item"> <a class="footer-list__link" href="#">О сервисе</a></li>
             <li class="footer-list__item"> <a class="footer-list__link" href="#">Наша команда</a></li>
+            <li class="footer-list__item"> <a class="footer-list__link" href="#">Вакансии</a></li>
             <li class="footer-list__item"> <a class="footer-list__link" href="#">Инвесторы</a></li>
           </ul>
         </div>
         <div class="footer-item">
           <ul class="footer-list"> 
-            <li class="footer-list__item__title">СЛУЖБА ПОДДЕРЖКИ</li>
+            <li class="footer-list__item__title"> <a class="footer-list__link__title" href="#">СЛУЖБА ПОДДЕРЖКИ</a></li>
             <li class="footer-list__item"> <a class="footer-list__link" href="#">Соглашения</a></li>
             <li class="footer-list__item"> <a class="footer-list__link" href="#">Сообщества</a></li>
             <li class="footer-list__item"> <a class="footer-list__link" href="#">Связь с нами</a></li>
@@ -285,9 +375,21 @@ body {
             <li class="footer-list__item__title">ПОДПИСКА</li>
           </ul>
           <p class="footer__paragraph">Получайте специальные предложения и новости сервиса</p>
-          <input type="text" placeholder="Email">
+          <input class="footer__e-mail_subscription" type="text" placeholder="Email">
         </div>
       </div>
     </footer>
+    <div class="footer__bottom"> 
+      <div class="container footer__bottom__container">
+        <p class="footer__bottom__copyright">Copyright © 2018 Toxin отель. Все права защищены.</p>
+        <nav class="footer__bottom__nav"> 
+          <ul class="footer__bottom__nav-list">
+            <li class="footer__bottom__nav-list__item"><a class="footer__bottom-list__link" href=""><img class="footer__bottom__img img__footer__bottom" src="/src/images/nav/twitter.svg" alt="Twitter"></a></li>
+            <li class="footer__bottom__nav-list__item"><a class="footer__bottom-list__link" href=""><img class="footer__bottom__img img__footer__bottom" src="/src/images/nav/facebook.svg" alt="Facebook"></a></li>
+            <li class="footer__bottom__nav-list__item"><a class="footer__bottom-list__link" href=""><img class="footer__bottom__img img__footer__bottom" src="/src/images/nav/instagram.svg" alt="Instagram"></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </body>
 </html>

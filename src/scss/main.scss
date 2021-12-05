@@ -26,4 +26,22 @@ body{
 @import "components/arrow__bottom";
 @import "components/banner";
 @import "components/footer";
+@import "components/footer__bottom.scss";
 
+.main{
+    &__container{
+        position: relative;
+    }
+    
+    &__paragraph{
+        width: 29.7rem;
+        position: absolute;
+        text-align: right;
+        padding-top: 0;
+        top: 75.2rem;
+        right: 0;
+        font-size: 1.4rem;
+        color: rgba(31, 32, 65, 0.75);
+        line-height: 2.4rem;
+    }
+}

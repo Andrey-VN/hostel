@@ -176,6 +176,7 @@ body {
 .footer {
   margin-top: 83rem;
   background: #fff;
+  border-bottom: .1rem solid #E5E5E5;
 }
 
 .footer-item {
@@ -193,11 +194,13 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   padding-top: 10.4rem;
+  margin-bottom: -1.1rem;
 }
 
 .footer__paragraph {
   font-size: 1.4rem;
   color: rgba(31, 32, 65, 0.75);
+  line-height: 2.4rem;
 }
 
 .footer-item:last-child, .footer-item:first-child {
@@ -207,8 +210,11 @@ body {
 .footer-list__item__title {
   font-weight: 700;
   font-size: 1.2rem;
-  color: #1F2041;
   margin-bottom: 2.1rem;
+}
+
+.footer-list__link__title {
+  color: #1F2041;
 }
 
 .footer-list__item {
@@ -222,5 +228,82 @@ body {
 
 .footer__logo__link {
   margin-bottom: 2rem;
+}
+
+.footer__e-mail_subscription {
+  width: 26rem;
+  height: 4.4rem;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: .4rem;
+}
+
+.footer__e-mail_subscription::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+  font-size: 1.4rem;
+  padding-left: 1.5rem;
+}
+
+.footer__e-mail_subscription:-ms-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+  font-size: 1.4rem;
+  padding-left: 1.5rem;
+}
+
+.footer__e-mail_subscription::-ms-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+  font-size: 1.4rem;
+  padding-left: 1.5rem;
+}
+
+.footer__e-mail_subscription::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+  font-size: 1.4rem;
+  padding-left: 1.5rem;
+}
+
+.footer__bottom__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2.3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__bottom__copyright {
+  font-size: 1.4rem;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.footer__bottom__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__bottom__nav-list__item {
+  margin-right: 20px;
+}
+
+.main__container {
+  position: relative;
+}
+
+.main__paragraph {
+  width: 29.7rem;
+  position: absolute;
+  text-align: right;
+  padding-top: 0;
+  top: 75.2rem;
+  right: 0;
+  font-size: 1.4rem;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 2.4rem;
 }
 /*# sourceMappingURL=main.css.map */

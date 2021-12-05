@@ -1,6 +1,7 @@
 .footer{
     margin-top: 83rem;
     background: $white;
+    border-bottom: .1rem solid #E5E5E5;
     &-item{
         margin-bottom: 10rem;
     }
@@ -9,21 +10,24 @@
         justify-content: space-between;
         align-items: flex-start;
         padding-top: 10.4rem;
+        margin-bottom: -1.1rem;
     }
     &__paragraph{
         font-size: 1.4rem;
         color: rgba(31, 32, 65, 0.75);
+        line-height: 2.4rem;
     }
     &-item:last-child, &-item:first-child{
         max-width: 26rem;
     }
     &-list{
-        
         &__item__title{
             font-weight: 700;
             font-size: 1.2rem;
-            color: #1F2041;
             margin-bottom: 2.1rem;
+        }
+        &__link__title{
+            color: #1F2041;
         }
         &__item {
             font-size: 1.4rem;
@@ -36,4 +40,19 @@
     &__logo__link{
         margin-bottom: 2rem;
     }
+    &__e-mail_subscription{
+        width: 26rem;
+        height: 4.4rem;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: .4rem;
+
+        &::placeholder {
+            color: rgba(31, 32, 65, 0.25);
+            font-size: 1.4rem;
+            padding-left: 1.5rem;
+        }
+    }
 }
+
+
+

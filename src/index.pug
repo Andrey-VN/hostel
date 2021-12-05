@@ -10,7 +10,12 @@ html(lang="en")
   body
     include modules/header.pug
     .banner 
-        img(src="/src/images/banner/banner-1.png", alt="").banner__image
+        img(src="/src/images/banner/banner-1.png", alt="Banner").banner__image
+    main.main 
+      .container.main__container
+        p.main__paragraph Лучшие номера для вашей работы, отдыха и просто вдохновения
     include modules/footer.pug
-    
+    include modules/footer__bottom.pug
+  
+        
     

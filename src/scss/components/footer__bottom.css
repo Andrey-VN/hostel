@@ -1,0 +1,30 @@
+.footer__bottom__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2.3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__bottom__copyright {
+  font-size: 1.4rem;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.footer__bottom__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__bottom__nav-list__item {
+  margin-right: 20px;
+}
+/*# sourceMappingURL=footer__bottom.css.map */
