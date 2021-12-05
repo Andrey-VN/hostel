@@ -40,16 +40,35 @@
     &__logo__link{
         margin-bottom: 2rem;
     }
-    &__e-mail_subscription{
-        width: 26rem;
-        height: 4.4rem;
-        border: 1px solid rgba(31, 32, 65, 0.25);
-        border-radius: .4rem;
-
-        &::placeholder {
-            color: rgba(31, 32, 65, 0.25);
-            font-size: 1.4rem;
-            padding-left: 1.5rem;
+    &__e-mail_subscription {
+        position: relative;
+        cursor: pointer;
+        &__text {
+            width: 26rem;
+            height: 4.4rem;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            border-radius: .4rem;
+            position: relative;
+            background: none;
+            outline: none;
+            box-sizing: border-box;
+            &::placeholder {
+                color: rgba(31, 32, 65, 0.25);
+                font-size: 1.4rem;
+                padding-left: 1.5rem;
+            }
+        }
+        &__button{
+            position: absolute;
+            width: 4.4rem;
+            height: 4.4rem;
+            right: 0;
+            top: calc(50% - 2.2rem);
+        }
+        &__img{
+            background-repeat: no-repeat;
+            display: block;
+            margin: calc(50% - 0.9rem) auto;
         }
     }
 }

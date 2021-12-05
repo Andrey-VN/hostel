@@ -236,34 +236,58 @@ body {
 }
 
 .footer__e-mail_subscription {
+  position: relative;
+  cursor: pointer;
+}
+
+.footer__e-mail_subscription__text {
   width: 26rem;
   height: 4.4rem;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: .4rem;
+  position: relative;
+  background: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.footer__e-mail_subscription::-webkit-input-placeholder {
+.footer__e-mail_subscription__text::-webkit-input-placeholder {
   color: rgba(31, 32, 65, 0.25);
   font-size: 1.4rem;
   padding-left: 1.5rem;
 }
 
-.footer__e-mail_subscription:-ms-input-placeholder {
+.footer__e-mail_subscription__text:-ms-input-placeholder {
   color: rgba(31, 32, 65, 0.25);
   font-size: 1.4rem;
   padding-left: 1.5rem;
 }
 
-.footer__e-mail_subscription::-ms-input-placeholder {
+.footer__e-mail_subscription__text::-ms-input-placeholder {
   color: rgba(31, 32, 65, 0.25);
   font-size: 1.4rem;
   padding-left: 1.5rem;
 }
 
-.footer__e-mail_subscription::placeholder {
+.footer__e-mail_subscription__text::placeholder {
   color: rgba(31, 32, 65, 0.25);
   font-size: 1.4rem;
   padding-left: 1.5rem;
+}
+
+.footer__e-mail_subscription__button {
+  position: absolute;
+  width: 4.4rem;
+  height: 4.4rem;
+  right: 0;
+  top: calc(50% - 2.2rem);
+}
+
+.footer__e-mail_subscription__img {
+  background-repeat: no-repeat;
+  display: block;
+  margin: calc(50% - 0.9rem) auto;
 }
 
 .footer__bottom__container {
@@ -305,7 +329,6 @@ body {
   position: absolute;
   text-align: right;
   padding-top: 0;
-  top: 75.2rem;
   right: 0;
   font-size: 1.4rem;
   color: rgba(31, 32, 65, 0.75);
@@ -375,7 +398,9 @@ body {
             <li class="footer-list__item__title">ПОДПИСКА</li>
           </ul>
           <p class="footer__paragraph">Получайте специальные предложения и новости сервиса</p>
-          <input class="footer__e-mail_subscription" type="text" placeholder="Email">
+          <div class="footer__e-mail_subscription">
+            <input class="footer__e-mail_subscription__text" type="text" placeholder="Email"><a class="footer__e-mail_subscription__button" href=""><img class="footer__e-mail_subscription__img" src="images/arrow-purple.svg" alt=""></a>
+          </div>
         </div>
       </div>
     </footer>
