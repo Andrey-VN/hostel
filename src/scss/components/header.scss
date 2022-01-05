@@ -1,7 +1,13 @@
+$btn-dradient: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);;
+$black: #000;
+$white: #fff;
+
+// @import "components/const";
+
 
 .header{
     position: relative;
-    z-index: -2;
+    z-index: 2;
     overflow: hidden;
     background: $white;
     
@@ -43,6 +49,8 @@
             font-size: 1.2em;
             cursor: pointer;
             line-height: 14,63px;
+            position: relative;
+            // z-index: 1;
             &-entry {
                 padding: 0.6rem 1.7rem;
                 position: relative;

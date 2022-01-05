@@ -1,5 +1,5 @@
 
-@import "fonts";
+// @import "fonts";
 
 a {
     text-decoration: none;
@@ -20,13 +20,13 @@ body{
 }
 
 // Components
-@import "components/const";
-@import "components/container";
-@import "components/header";
-@import "components/arrow__bottom";
-@import "components/banner";
-@import "components/footer";
-@import "components/footer__bottom.scss";
+// @import "components/const";
+// @import "components/container";
+// @import "components/header";
+// @import "components/arrow__bottom";
+// @import "components/banner";
+// @import "components/footer";
+// @import "components/footer__bottom.scss";
 
 .main{
     &__container{
@@ -38,10 +38,13 @@ body{
         position: absolute;
         text-align: right;
         padding-top: 0;
+        top: 75.2rem;
         right: 0;
         font-size: 1.4rem;
         color: rgba(31, 32, 65, 0.75);
         line-height: 2.4rem;
         
     }
+    
+    
 }

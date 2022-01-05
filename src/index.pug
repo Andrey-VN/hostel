@@ -5,8 +5,9 @@ html(lang="en")
   head
     title= pageTitle
     style   
-      include scss/main.css
+      //- include scss/main.css
       include scss/normalize.css
+    
   body
     include modules/header.pug
     .banner 
@@ -14,8 +15,21 @@ html(lang="en")
     main.main 
       .container.main__container
         p.main__paragraph Лучшие номера для вашей работы, отдыха и просто вдохновения
+
+      section.section__search__room
+        .container.section__search__room__container
+          .section__search__room__inner
+            p.section__search__room__title 
+            .section__search__room-item 
+              #id2.section__search__room-item__title 
+              input( type="text" id="id1").section__search__room.calendar
+              //- #id1.section__search__room.calendar
+
+            
     include modules/footer.pug
     include modules/footer__bottom.pug
+    //- script(type="module")
+    //-   include dist/main.bundle.js 
   
         
     

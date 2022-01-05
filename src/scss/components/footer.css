@@ -1,5 +1,6 @@
 .footer {
   margin-top: 83rem;
+  background: white;
   border-bottom: .1rem solid #E5E5E5;
 }
 
@@ -97,11 +98,15 @@
 
 .footer__e-mail_subscription__button {
   position: absolute;
-  background-image: url("images/arrow-purple.svg");
-  background-repeat: no-repeat;
   width: 4.4rem;
   height: 4.4rem;
   right: 0;
-  top: calc(50% - 1.1rem);
+  top: calc(50% - 2.2rem);
+}
+
+.footer__e-mail_subscription__img {
+  background-repeat: no-repeat;
+  display: block;
+  margin: calc(50% - 0.9rem) auto;
 }
 /*# sourceMappingURL=footer.css.map */
